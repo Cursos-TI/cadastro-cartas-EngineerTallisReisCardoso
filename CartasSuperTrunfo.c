@@ -14,6 +14,7 @@
     int pontos_turisticos1;
     float densidade_populacional1;
     float pib_per_capita1;
+    
         
 
         // VÁRIÁVEIS CARTA 2
@@ -26,6 +27,7 @@
     int pontos_turisticos2;
     float densidade_populacional2;
     float pib_per_capita2;
+    
                
 
                  // CADASTRO DA CARTA 1
@@ -51,9 +53,12 @@
 
     printf("Digite quantos pontos turisticos tem nessa cidade");
     scanf("%d", &pontos_turisticos1);
-
-
-                  // CADASTRO DE CARTAS 2
+    
+    // DECLARANDO A VARIÁVEL SUPER PODER
+    float area_por_habitante1 = area1 / populacao1;
+    float superPoder1 = (float)populacao1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1 + (1 / densidade_populacional1); 
+    
+    // CADASTRO DE CARTAS 2
     
     printf("--- Cadastro das cartas 2 --- \n");
 
@@ -77,6 +82,10 @@
 
     printf("Digite quantos pontos turisticos tem nessa cidade");
     scanf("%d", &pontos_turisticos2);
+
+        // DECLARANDO A VARIÁVEL SUPER PODER
+    float area_por_habitante2 = area2 / populacao2;
+    float superPoder2 = (float)populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2 + (1 / densidade_populacional2); 
 
  
               // EXIBIR INFORMAÇÕES NA TELA DO USUÁRIO
